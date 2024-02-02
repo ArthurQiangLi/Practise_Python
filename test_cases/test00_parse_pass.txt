@@ -1,0 +1,9 @@
+add "rm street" (5,5) (5,0)
+add "kk street" (0,6) (6,0)  
+add "s street" (1,1) (2,2) (3,3) (4,4)
+gg
+mod "S Street" (0,0) (6,6)
+mod "S STREET" (0,0) (6,6)
+gg  
+  gg  
+this file should only generate [ONE] error, which is from this line.[!NO EMPTY LINE AFTER]

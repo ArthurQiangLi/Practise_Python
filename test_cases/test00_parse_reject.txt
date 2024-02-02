@@ -1,0 +1,32 @@
+add"a street"(1,1)(2,2)(3,3)(4,4) 
+add "d street" (1,1) (2,2) (3,3) (4,4 
+add "f street" (1,1) (2,2) (3,3) (44) 
+add "g street" (1,1) (2,2) (3,3) (4,4,4) 
+add "j street" (1,-1) (-2,2) (+3,3) (4,+4) 
+add "j street" (1,1a) (2,2) (3,3) (4,4) 
+add "k street"  
+add (1,1) (2,2) (3,3) (4,4) "10 street" 
+add "l street" (1,1) 
+add "qw street" 1 
+ad "ll street" (1,1) (2,2) (3,3) (4,4) 
+add "pp street" (1 
+add "17 #street" (1,1) (2,2) (3,3) (4,4) 
+  add   "18 #street"   (1,1)   (2,2)   (3,3)   (4,4)  
+add "19 street (1,1) (2,2) (3,3) (4,4)" 
+add " 20 street " (1,1) (2,2) (3,3) (4,4) 
+add " 20 st()reet " (1,1) (2,2) (3,3) (4,4) 
+add "h street (1 ,1) ( 2,2) (3,3 ) (4, 4) 
+add "oo street" (1， 1) (2， 2) (3， 3) (4， 4)
+add "er street" (1,1) (1,1) 
+mod "b street" (1,1) (2,2)
+mod "c street" 
+rm "rm street"
+rm "0 street" (1,1) (2,2) f
+rm "rm street" (1,1) (2,2)
+rm "0 street  f
+gg "1 street"  f
+gg 1
+g g
+addd
+ad
+this file should generate 32 errors, including this line.[NO EMPTY LINE AFTER]
