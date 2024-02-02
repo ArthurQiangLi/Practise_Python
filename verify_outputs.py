@@ -1,5 +1,6 @@
 """ verify a1 output of 'gg' command by drawing a figure """
 """ paste your data in verify_outputs.txt within the same folder with this file. """
+""" Arthur 2024, Jan 1st """
 import re
 import pylab as pl
 import matplotlib.pyplot as plt
@@ -9,23 +10,22 @@ def parse_output_file(filename):
     with open(filename, 'r') as file:
         content = file.read()
 
-    # Parsing vertices
-    vertices_part = re.search(r'V = \{(.*?)\}', content, re.DOTALL).group(1)
-    Vs = {}
-    for line in vertices_part.split('\n'):
-        match = re.search(r'(\w+):\s*\(([\d.]+),\s*([\d.]+)\)', line)
-        if match:
-            point, x, y = match.groups()
-            Vs[point] = (float(x), float(y))
+    # Extract vertices and edges blocks
+    vertices_block = re.search(r"V = \{([\s\S]*?)\}", content).group(1)
+    edges_block = re.search(r"E = \{([\s\S]*?)\}", content).group(1)
 
-    # Parsing edges
-    edges_part = re.search(r'E = \{(.*?)\}', content, re.DOTALL).group(1)
+    # Parse vertices
+    Vs = {}
+    vertices_pattern = r"(\w+):\s*\((-?\d+\.?\d*),\s*(-?\d+\.?\d*)\)"
+    for match in re.finditer(vertices_pattern, vertices_block):
+        name, x, y = match.groups()
+        Vs[name] = (float(x), float(y))
+
+    # Parse edges
     Edges = set()
-    for line in edges_part.split('\n'):
-        match = re.search(r'<(\w+),(\w+)>', line)
-        if match:
-            p1, p2 = match.groups()
-            Edges.add((p1, p2))
+    edges_pattern = r"<(\w+),(\w+)>"
+    for match in re.finditer(edges_pattern, edges_block):
+        Edges.add(match.groups())
 
     return Vs, Edges
 
