@@ -2,6 +2,7 @@
 
 ## [Map0] professor's
 ![plot](./Figure_2.png)
+
 <span style="color: red;">This is a NORMAL case, which cotains 3 small examples.</span>
 
 ## [1/3]
@@ -42,6 +43,7 @@ E = {
 
 ## [2/3]
 ![plot](./Figure_3.png)
+
 use cmd: (Note that the original command used 'mod', but to let it pass our verify_outputs.py, we just modify it, cause we're focusing on the algorithm not parsing commands.)
 ```
 add "King Street S" (4,2) (4,8)
@@ -68,6 +70,7 @@ E = {
 
 ## [3/3]
 !['plot'.](./Figure_4.png)
+
 use cmd: (Note that the original command used 'mod', but to let it pass our verify_outputs.py, we just modify it, cause we're focusing on the algorithm not parsing commands.)
 ```
 add "Davenport Road" (1,4) (5,8)
