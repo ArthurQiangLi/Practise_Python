@@ -1,4 +1,4 @@
-# 1. h1 Texts
+# 1. h1 Texts [I learned from this video](https://www.youtube.com/watch?v=bTVIMt3XllM)
 ## h2 Markdown note tools: Bear app, Joplin, standard Notes, Obsidian
 ### h3 Markdown blog tool: ghost
 #### h4
@@ -8,7 +8,7 @@ default text size 123
 
 [link text in blue](http://github.com)
 
-**bolded text** *Italied test* ~~strikethrough text~~ `inline code` 
+**bolded text** *Italied test* use <br> '\<br>' for breaking ~~strikethrough text~~ `inline code` 
 ```py
 import system
 def add(a):

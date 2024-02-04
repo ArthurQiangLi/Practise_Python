@@ -1,6 +1,4 @@
-## Notes when reading 
-
-# [Python Crash Course, Eric Matthes]
+# Notes when reading <br>[Python Crash Course, Eric Matthes]
 
 # #1 2024, Jan 28
 ```py
