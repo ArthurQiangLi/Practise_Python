@@ -1,6 +1,6 @@
 # 1. h1 Texts
-## h2
-### h3
+## h2 Markdown note tools: Bear app, Joplin, standard Notes, Obsidian
+### h3 Markdown blog tool: ghost
 #### h4
 ##### h5
 default text size 123
