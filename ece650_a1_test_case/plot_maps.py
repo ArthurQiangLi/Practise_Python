@@ -59,7 +59,7 @@ if(lines):
     ax.add_collection(lc)
     ax.autoscale()
 #[2] read outputs.txt and plot 
-filename = 'verify_outputs.txt'
+filename = 'outputs.txt'
 Vs, Edges = parse_output_file(filename)
 print("Vs =", Vs)
 print("Edges =", Edges)
