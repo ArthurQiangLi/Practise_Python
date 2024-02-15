@@ -32,7 +32,7 @@ Note: The assignment will not check `'v 0'` or `' v *~!@#$'` or `'V  '` these ki
 
 
 ## Test2- Check E input
-#### [1] `Error: An edge has same vertces.`
+#### [1] `Error: An edge u==v.`
 ```
 V 5
 E {<1,1>}
@@ -48,13 +48,13 @@ E {<1,2>, <2,1>}
 V 5
 E {<1,2>, <1,2>}
 ```
-#### [3] `Error: Vertex in E not in V.`
+#### [3] `Error: Vertex > V`
 ```
 V 5
 E {<1,2>,<5,70>}
 ```
 
-#### [4] Let Empty E passes
+#### [4] IT'S OK, Let Empty E passes
 ```
 V 15
 E {}
@@ -66,7 +66,7 @@ E {}
 s 1 9
 ``` 
 
-#### [6] `Error: Edge value error.`
+#### [6] `Error: Edge value < 2.`
 ```
 V 15
 E {<-1,2>,<0,6>,<5,6>}
@@ -80,22 +80,27 @@ V 5
 E {<1,2>,<1,3>,<1,4>}
 s 4 5
 ```
-#### [2] `Error: No path found, vertex not exists.`
+#### [2] `Error: No path found, start/end > V.`
 ```
 V 5
 E {<1,2>, <1,3>, <1,4>}
 s 7 100
 ```
-#### [3] `Error: Error search parameter.`
+#### [3] `Error: start ==end.`
 ```
 V 5
 E {<1,2>, <1,3>, <1,4>}
 s 7 7
 ```
+#### [4] `Error: start/end < 2.`
+```
+V 5
+E {<1,2>, <1,3>, <1,4>}
+s -7 7
+```
 
 
-
-## t04 Check Others
+## Test4- Check Others
 #### [1] When new V specification starts, all previous info could be forgotten.
 ```
 V 15
