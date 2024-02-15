@@ -19,11 +19,11 @@ Note, for first line it could output `2-8-10` too.
 
 ## Test1- Check V input
 
-#### [1] Should output: `Error: Set Wrong input for V.` 
+#### [1] Should output: `Error: V<2.` 
 ```
 V 0
 ```
-#### [2] `Error: Set Wrong input for V.`
+#### [2] `Error: V<2.`
 ```
 V -100
 ```
@@ -66,7 +66,7 @@ E {}
 s 1 9
 ``` 
 
-#### [6] `Error: Edge value < 2.`
+#### [6] `Error: Edge value < 1.`
 ```
 V 15
 E {<-1,2>,<0,6>,<5,6>}
@@ -88,11 +88,11 @@ s 7 100
 ```
 #### [3] `Error: start ==end.`
 ```
-V 5
+V 9
 E {<1,2>, <1,3>, <1,4>}
 s 7 7
 ```
-#### [4] `Error: start/end < 2.`
+#### [4] `Error: start/end < 1.`
 ```
 V 5
 E {<1,2>, <1,3>, <1,4>}
