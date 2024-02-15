@@ -1,0 +1,141 @@
+
+---------------------
+No.1, testing t00.in
+input is:
+V 15
+E {<2,6>,<2,8>,<2,5>,<6,5>,<5,8>,<6,10>,<10,8>}
+s 2 10
+V 6
+E {<1,3>,<3,2>,<3,4>,<4,5>,<5,2>}
+s 5 1
+output is:
+
+2-6-10
+5-2-3-1
+
+---------------------
+---------------------
+No.2, testing t01.in
+input is:
+V 0
+
+
+
+output is:
+
+Error: Set Wrong input for V.
+
+---------------------
+---------------------
+No.3, testing t02.in
+input is:
+V 5
+E {<1,1>}
+
+output is:
+
+Error: An edge u==v.
+
+---------------------
+---------------------
+No.4, testing t11.in
+input is:
+V 0
+output is:
+
+Error: Set Wrong input for V.
+
+---------------------
+---------------------
+No.5, testing t12.in
+input is:
+
+output is:
+
+
+---------------------
+---------------------
+No.6, testing t21.in
+input is:
+V 5
+E {<1,1>}
+output is:
+
+Error: An edge u==v.
+
+---------------------
+---------------------
+No.7, testing t22.in
+input is:
+V 5
+E {<1,2>, <2,1>}
+output is:
+
+Error: edge already exists/duplicated
+
+---------------------
+---------------------
+No.8, testing t23.in
+input is:
+V 5
+E {<1,2>,<5,70>}
+output is:
+
+Error: u or v > V.
+
+---------------------
+---------------------
+No.9, testing t24.in
+input is:
+V 15
+E {}
+output is:
+
+
+---------------------
+---------------------
+No.10, testing t25.in
+input is:
+V 15
+E {}
+s 1 9
+output is:
+
+Error: Dijkstra finds E empty.
+
+---------------------
+---------------------
+No.11, testing t31.in
+input is:
+V 5
+E {<1,2>,<1,3>,<1,4>}
+s 4 5
+output is:
+
+Error: Dijkstra finds no path.
+
+---------------------
+---------------------
+No.12, testing t32.in
+input is:
+V 5
+E {<1,2>, <1,3>, <1,4>}
+s 7 100
+output is:
+
+Error: Dijkstra finds start or end > V.
+
+---------------------
+---------------------
+No.13, testing t41.in
+input is:
+V 15
+E {<2,6>,<2,8>,<2,5>,<6,5>,<5,8>,<6,10>,<10,8>}
+V 5
+E {<1,3>,<3,2>,<3,4>,<4,5>,<5,2>}
+s 5 1
+output is:
+
+5-2-3-1
+
+---------------------
