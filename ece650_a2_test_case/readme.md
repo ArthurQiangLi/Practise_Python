@@ -13,10 +13,10 @@ All needed files are in `/test`, We use `test_script.sh` to test all the files a
 ## 3.Key notes in the code
 
 
-Note1: You executable is in `../build/` because we have defined `    ../build/ece650-a2 < $infile >> test.log
+Note1: Your executable is in `../build/` because we have defined `    ../build/ece650-a2 < $infile >> test.log
 `, modify it if you have your executable in other place.
 
-Note2: `../build/ece650-a2 < $infile >> test.log 2>&1`, here <span style="color:red;">'2>&1'</span>, means to  redirect both standard output (stdout) and standard error (stderr) to the same file.
+Note2: `../build/ece650-a2 < $infile >> test.log 2>&1`, here ***'2>&1'***, means to  redirect both standard output (stdout) and standard error (stderr) to the same file.
 
 
 ```
@@ -30,8 +30,32 @@ for infile in ../test/t*.in; do
     cat $infile >> test.log
     
     echo -e "\noutput is:\n" >> test.log
-    ../build/ece650-a2 < $infile >> test.log
+    ../build/ece650-a2 < $infile >> test.log 2>&1 #output cout and cerr both to the log file.
     echo -e "\n---------------------" >> test.log
     ((counter++))
 done
 ```
+
+## 4. Updates (Feb 16, 2024)
+
+I add some command in top of the test_script.h file, so that **It can compile and run the test all automatically!**
+
+```
+cd ../
+if [ -d build ]; then
+  rm -r build
+fi
+cd ../
+pwd
+cd a2 && mkdir build && cd build && cmake ../
+make
+cd ../test
+
+echo "" > test.log # Clear the log file first
+```
+
+### How to use it?
+ 1. Make sure you `cd` to  `/test` directory. 
+ 2. Run `./test_script.sh` and checkout `test.log`.
+
+ !['picture'](./README/F16.png)

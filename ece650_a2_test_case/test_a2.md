@@ -28,6 +28,11 @@ V 0
 V -100
 ```
 
+#### [3] `Error: V input is wrong.`
+```
+V 5.5
+```
+
 Note: The assignment will not check `'v 0'` or `' v *~!@#$'` or `'V  '` these kinds of syntax, because the professor thinks they are **meaningless** for the goal.
 
 
@@ -73,7 +78,7 @@ E {<-1,2>,<0,6>,<5,6>}
 ```
 
 
-## Test3- Check No path found
+## Test3- Check path finder
 #### [1] `Error: No path found, no path in the map.`
 ```
 V 5
