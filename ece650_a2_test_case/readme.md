@@ -5,9 +5,10 @@ All needed files are in `/test`, We use `test_script.sh` to test all the files a
 
 ## 2.How to use?
 1. Make sure you `cd` to `/test` directory.
-2. Compile your program `ece650-a2` first.
-3. Run `./test_script.sh` and checkout `test.log`.
-4. That's it!
+1. Compile your program `ece650-a2` first.
+1.  <span style="color:red;">Run `chmod +x test_script.sh` to give this script execute permission. </span>
+1. Run `./test_script.sh` and checkout `test.log`.
+1. That's it!
 
 ## 3.Key notes in the code
 
@@ -15,6 +16,7 @@ All needed files are in `/test`, We use `test_script.sh` to test all the files a
 Note1: You executable is in `../build/` because we have defined `    ../build/ece650-a2 < $infile >> test.log
 `, modify it if you have your executable in other place.
 
+Note2: `../build/ece650-a2 < $infile >> test.log 2>&1`, here <span style="color:red;">'2>&1'</span>, means to  redirect both standard output (stdout) and standard error (stderr) to the same file.
 
 
 ```
