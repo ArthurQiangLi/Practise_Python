@@ -1,7 +1,7 @@
 # Guide for testing a2 automaticlly
 
 ## 1.Introduction
-All needed files are in `/test`, We use `test_script.sh` to test all the files automatically and log the input+out put gracely in file `test.log`.
+All needed files are in `/test`, We use `test_script.sh` to test all the files automatically and log the input+output gracely in file `test.log`.
 
 ## 2.How to use?
 1. Make sure you `cd` to `/test` directory.
