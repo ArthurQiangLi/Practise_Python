@@ -8,7 +8,15 @@ default text size 123
 
 [link text in blue](http://github.com)
 
-**bolded text** *Italied test* use <br> '\<br>' for breaking ~~strikethrough text~~ `inline code` 
+**bolded text** *Italied test* use <br> 
+
+'\<br>' for breaking
+
+ ~~strikethrough text~~ 
+ 
+ `inline code` 
+
+
 ```py
 import system
 def add(a):
@@ -36,7 +44,16 @@ class Example(system):
 ---
 | name | age | balence |
 |:----| ----:| ----|
+|left | right | center |
 | arthur | 17| $500B |
+
+| one column |
+| ---| 
+| how to use Latex|
+| can also insert a picture in a table |
+
+
+
 
 # 2. local hyper link
 
@@ -48,3 +65,20 @@ this is a link : [link text](#1-advanced-table) to #1. advanced: tables
     what is not showed by default, 
 </details>
 
+
+# 3. Advanced topic: using LaTex
+
+> Example below, start with '$' for inline ones or '$$' for paragraphs.
+
+**Line-line Intersection**
+(From [Wikipedia](https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection))
+
+Given two lines $L_1$ and $L_2$, where the line $L_1$ is defined by two distinct points $(x_1, y_1)$ and $(x_2, y_2)$, and the line $L_2$ is defined by two distinct points $(x_3, y_3)$ and $(x_4, y_4)$. Their intersection (if defined) is a point $(P_x, P_y)$ defined by the following equations:
+$$
+\begin{array}{lcl}
+P_x &=& \frac{(x_1y_2 - y_1x_2)(x_3 - x_4) - (x_1 - x_2)(x_3y_4 - y_3x_4)}{(x_1 - x_2)(y_3 - y_4) - (y_1 - y_2)(x_3 - x_4)}\\[.2in]
+P_y &=& \frac{(x_1y_2 - y_1x_2)(y_3 - y_4) - (y_1 - y_2)(x_3y_4 - y_3x_4)}{(x_1 - x_2)(y_3 - y_4) - (y_1 - y_2)(x_3 - x_4)}
+\end{array}
+$$
+
+__Note: these equations do not handle special cases, such as when the lines are parallel ...__
