@@ -16,6 +16,9 @@ default text size 123
  
  `inline code` 
 
+==Hightlights useing '=='== <mark>Highlights</mark>
+
+X<sub>the sub</sub>    |   X<sup>the sup</sup>
 
 ```py
 import system
